@@ -40,21 +40,47 @@
     <!-- Audio Narration Controls -->
     <div class="audio-controls" id="audioControls">
       <div class="audio-controls-container">
-        <button class="audio-btn" id="audioToggle" aria-label="Play/Pause narration">
+        <button
+          class="audio-btn"
+          id="audioToggle"
+          aria-label="Play/Pause narration"
+        >
           <span class="audio-icon"></span>
           <span class="audio-text">Listen to Page</span>
         </button>
-        <button class="audio-btn audio-settings-btn" id="audioSettings" aria-label="Audio settings">
+        <button
+          class="audio-btn audio-settings-btn"
+          id="audioSettings"
+          aria-label="Audio settings"
+        >
           <span class="audio-icon">⚙️</span>
         </button>
         <div class="audio-settings-panel" id="audioSettingsPanel">
           <div class="setting-group">
-            <label for="speechRate">Speed: <span id="rateValue">1.0</span>x</label>
-            <input type="range" id="speechRate" min="0.5" max="2" step="0.1" value="1">
+            <label for="speechRate"
+              >Speed: <span id="rateValue">1.0</span>x</label
+            >
+            <input
+              type="range"
+              id="speechRate"
+              min="0.5"
+              max="2"
+              step="0.1"
+              value="1"
+            />
           </div>
           <div class="setting-group">
-            <label for="speechPitch">Pitch: <span id="pitchValue">1.0</span></label>
-            <input type="range" id="speechPitch" min="0.5" max="2" step="0.1" value="1">
+            <label for="speechPitch"
+              >Pitch: <span id="pitchValue">1.0</span></label
+            >
+            <input
+              type="range"
+              id="speechPitch"
+              min="0.5"
+              max="2"
+              step="0.1"
+              value="1"
+            />
           </div>
           <div class="setting-group">
             <label for="voiceSelect">Voice:</label>
