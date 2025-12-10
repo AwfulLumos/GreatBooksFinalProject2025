@@ -71,22 +71,7 @@ h2 {
     display: inline-block;
     width: 100%;
 }
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 80px;
-    height: 3px;
-    background: var(--gradient-accent);
-    transition: width 0.3s ease;
-}
-
-h2:hover::after {
-    width: 150px;
-}
-
+    
 h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -422,7 +407,6 @@ li::marker {
 }
 
 .content-box:hover {
-    transform: translateY(-5px);
     box-shadow: 0 12px 30px rgba(29, 84, 108, 0.18);
 }
 
