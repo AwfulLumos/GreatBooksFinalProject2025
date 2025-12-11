@@ -6,12 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
   const navToggle = document.getElementById("navToggle");
   const navMenu = document.getElementById("navMenu");
+
   // Footer quick links navigation
   document.querySelectorAll(".footer-nav a").forEach(function (link) {
     link.addEventListener("click", function (e) {
       const href = this.getAttribute("href");
       if (href && href.startsWith("#")) {
         e.preventDefault();
+
         // Use the same navigation logic as main nav
         const targetSection = document.querySelector(href);
         if (targetSection) {
@@ -20,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .forEach((section) => section.classList.remove("active"));
           targetSection.classList.add("active");
           window.scrollTo({ top: 0, behavior: "smooth" });
+
           // Update nav active state
           document
             .querySelectorAll(".nav-link")
